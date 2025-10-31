@@ -1,12 +1,18 @@
-basicsr>=1.4.2
-facexlib>=0.2.5
+# ✅ 핵심 라이브러리
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ✅ GFPGAN 기반 유틸
+basicsr==1.4.2          # 최신 PyTorch 호환판
+facexlib==0.3.0         # CUDA 12 환경 호환
+realesrgan==0.3.0       # 영상 복원용
+
+# ✅ 공통 유틸
 lmdb
-numpy
-opencv-python
+numpy>=1.24
+opencv-python>=4.8
 pyyaml
-scipy
-tb-nightly
-torch>=1.7
-torchvision
+scipy>=1.11
 tqdm
 yapf
+tensorboard
